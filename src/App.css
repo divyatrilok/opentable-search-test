@@ -15,13 +15,29 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 250px;
+  padding: 20px;
+}
+
+.App-header.small {
+  height: 100px;
+  flex-direction: row;
+  padding: 0;
+  justify-content: left;
+}
+
+.App-header.small img{
+  height: 10vmin;
+}
+.App-header.small h1{
+  font-size: 1.2em;
+  text-align: left;
 }
 
 .App-link {
@@ -35,4 +51,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.App-body{
+  padding: 30px;
 }
